@@ -1,4 +1,4 @@
-# gitea docker compose template with mysql
+# gitea docker compose template
 
 ## setup
 
@@ -8,4 +8,4 @@ docker-compose -d
 
 ## screenshot
 
-![gitea](https://raw.githubusercontent.com/damingerdai/gitea-mysql-docker-template/master/screenshots/gitea.png)
+![gitea](https://raw.githubusercontent.com/damingerdai/gitea-docker-template/master/screenshots/gitea.png)
