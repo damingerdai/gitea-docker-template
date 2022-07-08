@@ -3,7 +3,7 @@
 ## setup
 
 ```
-docker-compose -d 
+docker-compose up -d 
 ```
 
 ## screenshot
