@@ -8,7 +8,7 @@ services:
     networks:
       - drone-network # 加入到drone网络
     ports:
-      - '7931:5432'
+      - '5432:5432'
     environment:
       - POSTGRES_USER=drone # PGSQL默认用户
       - POSTGRES_PASSWORD=drone # PGSQL默认密码
@@ -33,6 +33,7 @@ services:
       - DRONE_LOGS_TRACE=true
       - DRONE_LOGS_DEBUG=true
       # - DRONE_GITEA_SERVER=http://localhost:13000
+      - DRONE_GITEA_SKIP_VERIFY=true
       - DRONE_GITEA_SERVER=http://host.docker.internal:13000
       - DRONE_GITEA_CLIENT_ID=dd34f47a-57cf-417e-8a4d-b4accc08377a
       - DRONE_GITEA_CLIENT_SECRET=gto_pfvareujq5l2644wfnajsmahgubrsw4ddg26kuxbosmwfiezgo6a
